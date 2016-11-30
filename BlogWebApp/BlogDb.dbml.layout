@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BlogDb">
+  <DataContextMoniker Name="/BlogDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5881b3aa-fc00-43aa-a5bd-853c75fd9274" absoluteBounds="1.875, 0.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/BlogDbDataContext/kategoriler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81f6de77-d9a6-40fe-9d02-972e61b514c1" absoluteBounds="1.8900000000000001, 1.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a3c1e484-b9e8-4cee-9a2c-e573be5fd9af" absoluteBounds="4.875, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/BlogDbDataContext/yoneticiler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="99e41bfc-030a-42ff-8919-459ea7c373a0" absoluteBounds="4.89, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8f0c7a8e-9f63-4bfe-8779-ad097f06b89d" absoluteBounds="4, 3.25, 2, 2.5401025390625">
+      <DataClassMoniker Name="/BlogDbDataContext/makaleler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6336d1e-3989-4061-99a9-c9c587db3a2b" absoluteBounds="4.015, 3.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.875 : 2.0112939453125); (2.875 : 4.52005126953125); (4 : 4.52005126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BlogDbDataContext/kategoriler/kategoriler_makaleler" />
+      <nodes>
+        <classShapeMoniker Id="5881b3aa-fc00-43aa-a5bd-853c75fd9274" />
+        <classShapeMoniker Id="8f0c7a8e-9f63-4bfe-8779-ad097f06b89d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.4375 : 2.7131982421875); (5.4375 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BlogDbDataContext/yoneticiler/yoneticiler_makaleler" />
+      <nodes>
+        <classShapeMoniker Id="a3c1e484-b9e8-4cee-9a2c-e573be5fd9af" />
+        <classShapeMoniker Id="8f0c7a8e-9f63-4bfe-8779-ad097f06b89d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
